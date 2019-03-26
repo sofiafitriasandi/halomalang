@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-//panggil model 
+
 use App\Berita;
 use App\Kategori;
 
@@ -70,7 +70,7 @@ public function delete($id_berita)
 {
     $berita = Berita::find($id_berita);
     $berita-> delete();
-    return redirect('/berita');
+    return redirect()->back();
 }
 public function pivot (Request $request){
 	$berita = new berita;
@@ -86,4 +86,5 @@ public function pivot (Request $request){
 			
 			return 'anda beruntung';
 		}
-		}
+		
+}

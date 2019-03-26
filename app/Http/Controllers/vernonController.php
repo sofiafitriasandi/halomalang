@@ -4,6 +4,9 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
+use App\Berita;
+use App\Kategori;
+
 class vernonController extends Controller
 {
     public function beranda(){

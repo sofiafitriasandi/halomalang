@@ -26,11 +26,15 @@ Route::get('/login', function () {
 Route::get('/welcome', function () {
     return view('welcome');
 });
+Route::get('/Home', function () {
+    return view('Home');
+});
+
 
 
 Route::get('/berita', 'beritaController@index')->name('berita');
 
-Route::get('/berita/tambah', 'beritaController@tambah');
+Route::get('/berita/tambah', 'beritaController@tambah') ->name('tambah');
 
 Route::post('/berita/store', 'beritaController@store');
 
@@ -43,5 +47,4 @@ Route::get('/berita/hapus/{id_berita}', 'beritaController@delete');
 Route::get('/berita/pivot','beritaController@pivot');
 
 Auth::routes();
-
 Route::get('/home', 'HomeController@index')->name('home');
