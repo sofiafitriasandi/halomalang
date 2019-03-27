@@ -24,7 +24,5 @@ class vernonController extends Controller
 	public function kategori(){
 	return view ('kategori')
 	}
-	public function dashboard() {
-	return view ('dashboard')
-}
+	
 }

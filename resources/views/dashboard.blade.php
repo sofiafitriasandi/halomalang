@@ -34,22 +34,12 @@
               @section('crud')
 			  <thead>
 			  
-                    <a href="/berita/tambah" class="btn btn-primary">Input Berita Baru</a>
+                    <a href="/berita" class="btn btn-primary">Input Berita Baru</a>
                     <br/>
                     <br/>
 					
-					 <a href="/berita/tambah" class="btn btn-primary">Lihat Kategori</a>
+					 <a href="/kategori" class="btn btn-primary">Lihat Kategori</a>
                  
-                    <table class="table table-bordered table-hover table-striped">
-                        <thead>
-                            <tr>
-                             
-                                </td>
-                               
-                            </tr>
-                            @endforeach
-                        </tbody>
-                    </table>
                 </div>
 				
             </div>
