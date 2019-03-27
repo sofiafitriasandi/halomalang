@@ -18,7 +18,7 @@
                     <br/>
                     
  
-                    <form method="post" action="/berita/update/{{ $berita->id_berita }}">
+                    <form method="post" action="/berita/update/{{$berita->id_berita}}">
  
                         {{ csrf_field() }}
                         {{ method_field('PUT') }}

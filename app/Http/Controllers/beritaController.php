@@ -68,8 +68,10 @@ public function update($id_berita, Request $request)
 }
 public function delete($id_berita)
 {
+	
     $berita = Berita::find($id_berita);
-    $berita-> delete();
+    
+	$berita->delete();
     return redirect()->back();
 }
 public function pivot (Request $request){

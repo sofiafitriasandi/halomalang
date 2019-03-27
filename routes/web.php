@@ -34,7 +34,7 @@ Route::get('/Home', function () {
 
 Route::get('/berita', 'beritaController@index')->name('berita');
 
-Route::get('/berita/tambah', 'beritaController@tambah') ->name('tambah');
+Route::get('/berita/tambah', 'beritaController@tambah') ;
 
 Route::post('/berita/store', 'beritaController@store');
 
@@ -45,6 +45,21 @@ Route::put('/berita/update/{id_berita}', 'beritaController@update');
 Route::get('/berita/hapus/{id_berita}', 'beritaController@delete');
 
 Route::get('/berita/pivot','beritaController@pivot');
+
+
+
+
+Route::get('/kategori', 'kategoriController@index')->name('kategori');
+
+Route::get('/kategori/tambah', 'kategoriController@tambah');
+
+Route::post('/kategori/store', 'kategoriController@store');
+
+Route::get('/kategori/edit/{id_kategori}', 'kategoriController@edit');
+
+Route::put('/kategori/update/{id_kategori}', 'kategoriController@update');
+
+Route::get('/kategori/hapus/{id_kategori}', 'kategoriController@delete');
 
 Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');

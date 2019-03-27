@@ -38,28 +38,12 @@
                     <br/>
                     <br/>
 					
-					
+					 <a href="/berita/tambah" class="btn btn-primary">Lihat Kategori</a>
                  
                     <table class="table table-bordered table-hover table-striped">
                         <thead>
                             <tr>
-                                <th>Nama</th>
-                                <th>Tanggal</th>
-                                <th>Penulis</th>
-								<th>Isi</th>
-								<th>Edit</th>
-                            </tr>
-						
-                        </thead>
-                        <tbody>
-                            @foreach($berita as $p)
-                            <tr>
-                                <td>{{ $p->name }}</td>
-                                <td>{{ $p->tanggal }}</td>
-								<td>{{ $p->penulis }}</td>
-								<td>{{ $p->isi }}</td>
-								<td> <a href="/berita/edit/{{ $p->id_berita }}" class="btn btn-warning">Edit</a>
-                                    <a href="/berita/hapus/{{ $p->id_berita}}" class="btn btn-danger">Hapus</a>
+                             
                                 </td>
                                
                             </tr>

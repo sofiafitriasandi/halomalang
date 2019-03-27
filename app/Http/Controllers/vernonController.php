@@ -21,4 +21,10 @@ class vernonController extends Controller
 		 public function welcome(){
 	return view ('welcome')
 	}
+	public function kategori(){
+	return view ('kategori')
+	}
+	public function dashboard() {
+	return view ('dashboard')
+}
 }

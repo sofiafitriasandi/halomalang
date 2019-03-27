@@ -29,42 +29,34 @@
             <div class="card mt-5">
 			  <div class="card-body">
                 <h3 class="text-center"><a href="https://www.malasngoding.com/category/laravel" target="_blank">HaloMalang.Com</a></h3>
-                <h5 class="text-center my-4">kabar berita</h5>
+                <h5 class="text-center my-4">Data Kategori</h5>
            <table class="table table-bordered table-stripped">
               @section('crud')
 			  <thead>
 			  
-                    <a href="/berita/tambah" class="btn btn-primary">Input Berita Baru</a>
+                    <a href="/kategori/tambah" class="btn btn-primary">Input Kategori Baru</a>
                     <br/>
                     <br/>
-					
-					
-                 
                     <table class="table table-bordered table-hover table-striped">
                         <thead>
                             <tr>
                                 <th>Nama</th>
-                                <th>Tanggal</th>
-                                <th>Penulis</th>
-								<th>Isi</th>
-								<th>Edit</th>
                             </tr>
 						
                         </thead>
                         <tbody>
-                            @foreach($berita as $p)
+                            @foreach($kategori as $p)
+							
                             <tr>
-                                <td>{{ $p->name }}</td>
-                                <td>{{ $p->tanggal }}</td>
-								<td>{{ $p->penulis }}</td>
-								<td>{{ $p->isi }}</td>
-								<td> <a href="/berita/edit/{{ $p->id_berita }}" class="btn btn-warning">Edit</a>
-                                    <a href="/berita/hapus/{{ $p->id_berita}}" class="btn btn-danger">Hapus</a>
+                                <td>{{ $p->nama }}</td>
+								<td> <a href="/kategori/edit/{{ $p->id_kategori }}" class="btn btn-warning">Edit</a>
+                                    <a href="/kategori/hapus/{{ $p->id_kategori }}" class="btn btn-danger">Hapus</a>
                                 </td>
                                
                             </tr>
                             @endforeach
                         </tbody>
+						
                     </table>
                 </div>
 				

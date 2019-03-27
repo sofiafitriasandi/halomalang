@@ -28,4 +28,6 @@ class HomeController extends Controller
 		$berita = Berita::all();
         return view('berita',['berita'=> $berita]);
     }
-}
+	
+    }
+
